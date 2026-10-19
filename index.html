@@ -1,84 +1,1296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="GPS Digital Solutions creates modern websites, mobile apps, logos, branding and graphic designs for businesses and private clients.">
-<title>GPS Digital Solutions | Apps, Websites & Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPS Digital Solutions</title>
+
 <style>
-:root{--navy:#07111f;--navy2:#0b1b2d;--blue:#08b8ff;--purple:#873cff;--ink:#0b1422;--muted:#a9b8cb;--white:#f7faff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--white);background:var(--navy);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-header{position:sticky;top:0;z-index:10;background:rgba(5,14,26,.92);backdrop-filter:blur(14px);border-bottom:1px solid #20344b}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.09em}.logo{width:48px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:21px;font-weight:950;font-style:italic;box-shadow:0 8px 25px #087eff33}.brand small{display:block;color:#9fb2c8;font-size:10px;letter-spacing:.2em;font-weight:600}.links{display:flex;gap:27px;font-size:14px;color:#d4dfec}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 21px;border-radius:999px;font-weight:750;font-size:14px;background:linear-gradient(100deg,#00baff,#8c39ff);color:white;border:0;cursor:pointer;box-shadow:0 10px 28px #247dff24;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.outline{background:transparent;border:1px solid #1dbbff;color:white;box-shadow:none}.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 35%,#143c70 0,transparent 38%),linear-gradient(120deg,#050d18,#08192b 65%,#11122a);padding:88px 0 76px}.hero:after{content:"";position:absolute;right:-100px;top:25px;width:470px;height:470px;border:1px solid #159dff30;border-radius:50%;box-shadow:0 0 0 55px #159dff09,0 0 0 110px #159dff07;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:850}.hero h1{font-size:clamp(38px,5vw,63px);line-height:1.05;letter-spacing:-.045em;margin:17px 0 20px}.gradient{background:linear-gradient(90deg,#09c7ff,#9a4bff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:17px;color:#c2cede;max-width:560px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:27px 0}.trust{display:flex;gap:22px;flex-wrap:wrap;color:#d0deed;font-size:12px;margin-top:28px}.trust span:before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#19c6f2;color:#06121f;font-weight:900;margin-right:8px}.showcase{min-height:355px;display:grid;place-items:center;position:relative}.device{width:min(100%,470px);border:1px solid #54718e;border-radius:22px;background:linear-gradient(145deg,#17283c,#070e18);padding:12px;box-shadow:0 35px 80px #0009;transform:rotate(2deg)}.screen{min-height:290px;border-radius:13px;padding:25px;background:radial-gradient(ellipse at 75% 20%,#2e4380,transparent 45%),linear-gradient(140deg,#0d233d,#101020);overflow:hidden}.screen-top{display:flex;justify-content:space-between;font-size:11px;color:#c8d6e8;border-bottom:1px solid #ffffff1a;padding-bottom:15px}.screen h3{font-size:27px;line-height:1.1;margin:32px 0 10px}.screen p{font-size:12px;max-width:230px}.fake-button{display:inline-block;background:linear-gradient(90deg,#00baff,#773cff);padding:9px 14px;border-radius:30px;font-size:10px;font-weight:800}.float-card{position:absolute;background:#101d2d;border:1px solid #52677f;border-radius:15px;padding:15px 18px;box-shadow:0 20px 50px #0008}.float-card strong{display:block;font-size:14px}.float-card small{color:#aabbd0}.card-app{left:-6px;bottom:12px}.card-logo{right:-6px;bottom:35px}.section{padding:76px 0}.light{background:#f5f8fc;color:var(--ink)}.section-head{text-align:center;max-width:690px;margin:0 auto 36px}.section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-.035em;margin:10px 0}.section-head p{color:#61718a}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:25px 22px;box-shadow:0 8px 25px #142c4610;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 36px #142c461a}.service-icon{height:52px;width:52px;border-radius:15px;display:grid;place-items:center;font-size:25px;color:white;background:linear-gradient(135deg,#09baff,#6546ff)}.service:nth-child(2) .service-icon{background:linear-gradient(135deg,#00dba4,#079bff)}.service:nth-child(3) .service-icon{background:linear-gradient(135deg,#d741ff,#803cff)}.service:nth-child(4) .service-icon{background:linear-gradient(135deg,#ffb000,#ff6a00)}.service h3{margin:16px 0 8px;font-size:19px}.service p{font-size:14px;color:#61718a;margin:0 0 15px}.learn{font-size:13px;color:#087ff5;font-weight:800}.portfolio{background:linear-gradient(130deg,#07111f,#0c1d30)}.portfolio .section-head p{color:#a9b8cb}.projects{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.project-art{height:170px;border-radius:13px;padding:18px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:radial-gradient(circle at 80% 20%,#28588a,transparent 50%),linear-gradient(135deg,#152b42,#090f1b);border:1px solid #ffffff19}.project-art .mock{border:1px solid #7292b5;border-radius:12px;padding:18px 15px;width:85%;background:#0a1625;box-shadow:0 12px 25px #0007}.project-art .mock b{font-size:19px}.project-art .mock small{display:block;color:#9fb6ce;font-size:10px}.project:nth-child(2) .project-art{background:linear-gradient(135deg,#153c52,#182149)}.project:nth-child(3) .project-art{background:linear-gradient(135deg,#25163f,#111c30)}.project:nth-child(4) .project-art{background:linear-gradient(135deg,#34294b,#102d3d)}.project h3{font-size:16px;margin:12px 0 1px}.project p{font-size:12px;color:#a9b8cb;margin:0}.contact{background:radial-gradient(ellipse at 10% 100%,#113d60,transparent 45%),linear-gradient(120deg,#0a1a2c,#10132a)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.contact h2{font-size:clamp(32px,4vw,46px);line-height:1.1;margin:12px 0}.contact-copy p{color:#bdcad9}.checks{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;font-size:12px}.checks span:before{content:"✓";color:#24d6f5;font-size:17px;margin-right:7px}.form-card{padding:27px;border-radius:17px;border:1px solid #40566f;background:#071421e8;box-shadow:0 25px 60px #0004}.form-card h3{margin:0 0 18px}.form-card input,.form-card select,.form-card textarea{width:100%;padding:13px 14px;border:1px solid #3c526a;background:#102237;color:#f7faff;border-radius:8px;margin-bottom:11px;font:inherit;font-size:13px}.form-card input::placeholder,.form-card textarea::placeholder{color:#b3c0cf}.form-card textarea{min-height:100px;resize:vertical}.form-card .btn{width:100%;border-radius:8px}footer{background:#040b13;border-top:1px solid #1c2c3f;padding:25px 0;color:#91a3b8;font-size:12px}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}.footer-links a:hover{color:var(--blue)}.note{font-size:11px;color:#8ea1b8;margin-top:12px}
-@media(max-width:900px){.hero-grid,.contact-grid{grid-template-columns:1fr}.showcase{min-height:330px}.services,.projects{grid-template-columns:repeat(2,1fr)}.links{gap:14px}.nav-quote{display:none}}
-@media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}nav{height:68px}.brand{font-size:12px;letter-spacing:.04em}.brand small{font-size:8px}.logo{width:40px;height:38px}.links{display:none}.hero{padding:62px 0 48px}.hero h1{font-size:42px}.hero p{font-size:15px}.showcase{min-height:290px}.screen{min-height:240px;padding:18px}.screen h3{font-size:23px;margin-top:25px}.float-card{padding:10px 12px}.card-app{left:0}.card-logo{right:0}.section{padding:55px 0}.services,.projects{grid-template-columns:1fr}.project-art{height:190px}.service{padding:22px}.footer-row{justify-content:center;text-align:center}.footer-links{justify-content:center;flex-wrap:wrap}}
+:root{
+  --dark:#07101d;
+  --blue:#08b5ff;
+  --purple:#8d35ff;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#101827;
+  background:#fff;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  height:78px;
+  background:#07101d;
+  color:white;
+  border-bottom:1px solid rgba(255,255,255,.13);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav{
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.brand-mark{
+  width:62px;
+  height:43px;
+  position:relative;
+}
+
+.brand-mark .g{
+  position:absolute;
+  left:0;
+  font-size:38px;
+  font-weight:900;
+  font-style:italic;
+  color:#0ba8ff;
+}
+
+.brand-mark .s{
+  position:absolute;
+  left:18px;
+  font-size:34px;
+  font-weight:900;
+  font-style:italic;
+  color:white;
+}
+
+.brand-text strong{
+  display:block;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+.brand-text small{
+  display:block;
+  color:#c4cedd;
+  font-size:9px;
+  letter-spacing:2px;
+  margin-top:4px;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  font-size:14px;
+}
+
+.nav-links a{
+  color:#f3f6fb;
+}
+
+.nav-links a:hover{
+  color:#27b5ff;
+}
+
+.quote-btn{
+  padding:12px 23px;
+  border-radius:30px;
+  background:linear-gradient(100deg,#08b5ff,#8d35ff);
+  font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  min-height:435px;
+  color:white;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 90% 15%,rgba(0,126,255,.32),transparent 30%),
+    radial-gradient(circle at 72% 100%,rgba(60,42,170,.25),transparent 35%),
+    linear-gradient(110deg,#06101d,#091625 60%,#061221);
+}
+
+.hero-content{
+  min-height:435px;
+  display:grid;
+  grid-template-columns:48% 52%;
+  align-items:center;
+}
+
+.eyebrow{
+  color:#17aaff;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.hero h1{
+  font-size:36px;
+  line-height:1.08;
+  margin-bottom:17px;
+}
+
+.gradient-text{
+  background:linear-gradient(100deg,#08b7ff,#155cff,#a328ff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.hero-copy p{
+  max-width:520px;
+  color:#d4dce7;
+  font-size:14px;
+  line-height:1.55;
+  margin-bottom:22px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:14px;
+  margin-bottom:23px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 20px;
+  border-radius:25px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.btn-primary{
+  background:linear-gradient(100deg,#0bb6ff,#7d35ff);
+  color:white;
+}
+
+.btn-outline{
+  border:1px solid #168fe0;
+  color:white;
+}
+
+.hero-features{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  color:#dce4ef;
+  font-size:10px;
+}
+
+.hero-feature{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.check{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#16baff;
+  color:#07101d;
+}
+
+/* ================= HERO MOCKUP ================= */
+
+.hero-preview{
+  height:420px;
+  position:relative;
+}
+
+.laptop{
+  position:absolute;
+  width:425px;
+  height:260px;
+  right:25px;
+  top:62px;
+  background:#111923;
+  border:3px solid #a9b1bd;
+  border-radius:14px;
+  padding:12px;
+  box-shadow:0 30px 50px rgba(0,0,0,.55);
+}
+
+.laptop-screen{
+  width:100%;
+  height:100%;
+  border-radius:6px;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(2,12,24,.15),rgba(2,12,24,.45)),
+    linear-gradient(135deg,#173b5c,#09111d);
+  position:relative;
+}
+
+.laptop-topbar{
+  height:30px;
+  display:flex;
+  align-items:center;
+  padding:0 13px;
+  background:#09111d;
+  font-size:8px;
+}
+
+.mini-logo{
+  font-size:15px;
+  font-weight:900;
+  font-style:italic;
+  color:#14b4ff;
+}
+
+.mini-nav{
+  display:flex;
+  gap:18px;
+  margin-left:auto;
+  color:#d9e2ef;
+}
+
+.screen-copy{
+  position:absolute;
+  top:65px;
+  left:30px;
+  z-index:2;
+}
+
+.screen-copy h3{
+  font-size:20px;
+  line-height:1;
+  margin-bottom:8px;
+}
+
+.screen-copy p{
+  font-size:8px;
+  color:#dce4ec;
+  margin-bottom:10px;
+}
+
+.mini-button{
+  display:inline-block;
+  background:#087cf2;
+  padding:6px 12px;
+  border-radius:12px;
+  font-size:7px;
+}
+
+/* PHONE */
+
+.phone{
+  position:absolute;
+  z-index:5;
+  left:15px;
+  bottom:48px;
+  width:105px;
+  height:215px;
+  background:#080d14;
+  border:3px solid #8c96a4;
+  border-radius:17px;
+  padding:8px;
+  box-shadow:0 25px 35px rgba(0,0,0,.55);
+}
+
+.phone-screen{
+  height:100%;
+  border-radius:10px;
+  overflow:hidden;
+  background:#071421;
+  position:relative;
+}
+
+.phone-logo{
+  padding:23px 8px 8px;
+  font-weight:900;
+  color:#16adff;
+  font-size:11px;
+}
+
+.trading-title{
+  padding:3px 8px;
+  font-size:11px;
+  font-weight:bold;
+}
+
+.chart{
+  height:88px;
+  margin:5px;
+  border-bottom:1px solid #26384b;
+  background:
+    linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:20px 20px;
+}
+
+.chart svg{
+  width:100%;
+  height:100%;
+}
+
+.phone-btn{
+  margin:7px 8px;
+  text-align:center;
+  padding:6px;
+  border-radius:12px;
+  background:#087ff2;
+  font-size:7px;
+}
+
+.phone-menu{
+  position:absolute;
+  bottom:8px;
+  left:7px;
+  right:7px;
+  display:flex;
+  justify-content:space-around;
+  color:#94a9bd;
+  font-size:6px;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+  padding:55px 0 52px;
+  background:white;
+}
+
+.section-head{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.section-eyebrow{
+  color:#157cff;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.section-head h2{
+  margin-top:7px;
+  font-size:28px;
+}
+
+.section-head p{
+  margin-top:11px;
+  color:#6c7686;
+  font-size:13px;
+}
+
+.blue-line{
+  width:35px;
+  height:2px;
+  background:#137ce0;
+  margin:10px auto;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+}
+
+.service-card{
+  background:white;
+  border:1px solid #e0e5ec;
+  border-radius:5px;
+  padding:20px;
+  box-shadow:0 5px 20px rgba(19,37,63,.06);
+}
+
+.service-icon{
+  width:54px;
+  height:54px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  color:white;
+  font-size:27px;
+  margin-bottom:14px;
+}
+
+.icon-blue{
+  background:linear-gradient(135deg,#087dff,#2358ff);
+}
+
+.icon-green{
+  background:linear-gradient(135deg,#11d76c,#00aeb7);
+}
+
+.icon-purple{
+  background:linear-gradient(135deg,#ca3bff,#8731ee);
+}
+
+.icon-orange{
+  background:linear-gradient(135deg,#ffb000,#ff8500);
+}
+
+.service-card h3{
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.service-card p{
+  color:#687487;
+  font-size:12px;
+  line-height:1.55;
+  min-height:57px;
+}
+
+.learn{
+  margin-top:13px;
+  display:inline-block;
+  color:#0878db;
+  font-size:11px;
+  font-weight:bold;
+}
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio{
+  background:#081320;
+  color:white;
+  padding:55px 0;
+}
+
+.portfolio-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  margin-bottom:25px;
+}
+
+.portfolio-top .section-head{
+  text-align:left;
+  margin:0;
+}
+
+.portfolio-top h2{
+  font-size:27px;
+}
+
+.portfolio-top p{
+  font-size:12px;
+  color:#b7c1cf;
+  margin-top:5px;
+}
+
+.portfolio-btn{
+  border:1px solid #298bda;
+  border-radius:20px;
+  padding:10px 17px;
+  font-size:11px;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.project-image{
+  height:145px;
+  border-radius:5px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.project-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.project h4{
+  font-size:12px;
+  margin-top:9px;
+}
+
+.project p{
+  color:#9ba8ba;
+  font-size:10px;
+  margin-top:4px;
+}
+
+/* ================= CONTACT ================= */
+
+.cta{
+  min-height:250px;
+  color:white;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(5,16,27,.75),rgba(5,16,27,.6)),
+    linear-gradient(135deg,#182d3c,#526c75 50%,#101d2a);
+}
+
+.cta-content{
+  display:grid;
+  grid-template-columns:55% 45%;
+  gap:40px;
+  align-items:center;
+  min-height:250px;
+}
+
+.cta h2{
+  font-size:27px;
+  line-height:1.15;
+  margin:7px 0 12px;
+}
+
+.cta p{
+  color:#d5dde7;
+  font-size:12px;
+  max-width:440px;
+  line-height:1.6;
+}
+
+.cta-points{
+  display:flex;
+  gap:22px;
+  margin-top:17px;
+}
+
+.cta-point{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  font-size:10px;
+}
+
+.cta-check{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:#0cbcff;
+  color:#06111e;
+  display:grid;
+  place-items:center;
+}
+
+.quote-form{
+  background:rgba(8,18,32,.88);
+  border:1px solid rgba(150,190,225,.35);
+  border-radius:6px;
+  padding:16px;
+  margin:20px 0;
+}
+
+.quote-form h3{
+  font-size:14px;
+  margin-bottom:9px;
+}
+
+.form-field{
+  position:relative;
+  margin-bottom:6px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea{
+  width:100%;
+  border:1px solid #40546d;
+  border-radius:4px;
+  background:#13243a;
+  color:white;
+  padding:8px;
+  font-size:9px;
+}
+
+.form-field textarea{
+  height:45px;
+  resize:none;
+}
+
+.send-btn{
+  width:100%;
+  border:0;
+  padding:9px;
+  border-radius:4px;
+  background:linear-gradient(100deg,#09b5ff,#9a31ff);
+  color:white;
+  font-size:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#07101b;
+  color:white;
+  padding:20px 0;
+}
+
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.footer-brand strong{
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+.footer-nav{
+  display:flex;
+  gap:30px;
+  font-size:8px;
+  color:#d0d8e4;
+}
+
+.footer-copy{
+  color:#8290a3;
+  font-size:8px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+  .nav-links{
+    gap:15px;
+  }
+
+  .services-grid,
+  .projects{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero-content{
+    grid-template-columns:1fr;
+  }
+
+  .hero-preview{
+    height:360px;
+  }
+
+  .cta-content{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+
+  .brand-text{
+    display:none;
+  }
+
+  .nav-links a:not(.quote-btn){
+    display:none;
+  }
+
+  .hero h1{
+    font-size:31px;
+  }
+
+  .services-grid,
+  .projects{
+    grid-template-columns:1fr;
+  }
+
+  .portfolio-top{
+    display:block;
+  }
+
+  .portfolio-btn{
+    display:inline-block;
+    margin-top:15px;
+  }
+
+  .footer{
+    flex-direction:column;
+    gap:18px;
+  }
+}
 </style>
 </head>
+
 <body>
+
+<!-- HEADER -->
+
 <header>
-  <div class="wrap"><nav aria-label="Main navigation">
-    <a class="brand" href="#home"><span class="logo">GPS</span><span>GPS DIGITAL SOLUTIONS<small>APPS · WEBSITES · DESIGNS</small></span></a>
-    <div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-    <a class="btn nav-quote" href="#contact">Get a Free Quote <span>→</span></a>
-  </nav></div>
+<div class="container nav">
+
+<a href="#home" class="brand">
+<div class="brand-mark">
+<span class="g">G</span>
+<span class="s">S</span>
+</div>
+
+<div class="brand-text">
+<strong>GPS DIGITAL SOLUTIONS</strong>
+<small>APPS · WEBSITES · DESIGNS</small>
+</div>
+</a>
+
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="quote-btn">Get a Free Quote →</a>
+</nav>
+
+</div>
 </header>
-<main>
-<section class="hero" id="home"><div class="wrap hero-grid">
-  <div><div class="eyebrow">Turn your ideas into reality</div>
-    <h1>Custom Apps, Websites,<br>Logos &amp; Designs<br><span class="gradient">for Your Business<br>or Personal Brand</span></h1>
-    <p>We create modern, high-quality digital solutions that help you stand out, grow and succeed. Whether you need a mobile app, a professional website, a unique logo or stunning designs — we've got you covered.</p>
-    <div class="actions"><a class="btn" href="#contact">Get a Free Quote <span>→</span></a><a class="btn outline" href="#portfolio">View Our Work</a></div>
-    <div class="trust"><span>Fast &amp; Reliable</span><span>Personal Service</span><span>Ongoing Support</span></div>
-  </div>
-  <div class="showcase" aria-label="Digital design showcase">
-    <div class="device"><div class="screen"><div class="screen-top"><b>GPS</b><span>Home &nbsp; Services &nbsp; Contact</span></div><h3>Your Vision.<br><span class="gradient">Our Design.</span></h3><p>Modern websites. Powerful apps. Beautiful designs.</p><a class="fake-button" href="#contact">LET'S GET STARTED ↗</a></div></div>
-    <div class="float-card card-app"><strong>▣ App Development</strong><small>Ideas made practical</small></div>
-    <div class="float-card card-logo"><strong>✦ Brand Design</strong><small>Make your mark</small></div>
-  </div>
-</div></section>
-<section class="section light" id="services"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">Our services</div><h2>Everything You Need, All in One Place</h2><p>From concept to launch, we help turn your ideas into a polished digital presence.</p></div>
-  <div class="services">
-    <article class="service"><div class="service-icon">▣</div><h3>Mobile Apps</h3><p>Custom app concepts and development planned around your audience, goals and budget.</p><a class="learn" href="#contact">Discuss your app →</a></article>
-    <article class="service"><div class="service-icon">◎</div><h3>Websites</h3><p>Modern, responsive websites that look professional and work smoothly across devices.</p><a class="learn" href="#contact">Build your website →</a></article>
-    <article class="service"><div class="service-icon">✎</div><h3>Logos &amp; Branding</h3><p>Distinctive logo concepts and brand visuals to help your business make a memorable impression.</p><a class="learn" href="#contact">Create your brand →</a></article>
-    <article class="service"><div class="service-icon">✿</div><h3>Graphic Design</h3><p>Eye-catching graphics for social media, advertising, promotions and other creative projects.</p><a class="learn" href="#contact">Start a design →</a></article>
-  </div>
-</div></section>
-<section class="section portfolio" id="portfolio"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">Our work</div><h2>Ideas With Potential</h2><p>A preview of the kinds of digital projects GPS Digital Solutions can help bring to life.</p></div>
-  <div class="projects">
-    <article class="project"><div class="project-art"><div class="mock"><b class="gradient">GPS Trading</b><small>APP CONCEPT · MOBILE EXPERIENCE</small><div style="margin-top:16px;color:#13c6a5;font-size:23px">⌁ ↗ ⌁ ↗</div></div></div><h3>Mobile App Concept</h3><p>App design &amp; development</p></article>
-    <article class="project"><div class="project-art"><div class="mock"><b>Build Your Vision</b><small>BUSINESS WEBSITE CONCEPT</small><div style="margin-top:15px;height:35px;border-radius:5px;background:linear-gradient(90deg,#0db9ff,#7045ff)"></div></div></div><h3>Business Website</h3><p>Website design</p></article>
-    <article class="project"><div class="project-art"><div style="font-size:72px;font-weight:950;font-style:italic;background:linear-gradient(130deg,#00caff,#a3b5ca);color:transparent;background-clip:text">GPS</div></div><h3>Brand Identity</h3><p>Logo &amp; branding concept</p></article>
-    <article class="project"><div class="project-art"><div class="mock"><div style="font-size:43px">✦</div><b>Your Brand</b><small>CREATIVE DESIGN CONCEPT</small></div></div><h3>Social Media Graphics</h3><p>Graphic design</p></article>
-  </div>
-  <p class="note">Portfolio visuals shown here are illustrative concepts, not claims of completed client projects.</p>
-</div></section>
-<section class="section contact" id="about"><div class="wrap contact-grid">
-  <div class="contact-copy"><div class="eyebrow">Let's work together</div><h2>Ready to Bring Your Idea to Life?</h2><p>Whether you're starting a business, refreshing your brand or planning a new app, let's talk about what you need and find a practical way to make it happen.</p><div class="checks"><span>Free initial quote</span><span>No obligation</span><span>Personal response</span></div></div>
-  <div class="form-card" id="contact"><h3>Get a Free Quote</h3>
-    <form id="quoteForm">
-      <input name="name" autocomplete="name" placeholder="Your name" aria-label="Your name" required>
-      <input name="email" type="email" autocomplete="email" placeholder="Your email address" aria-label="Your email address" required>
-      <select name="service" aria-label="Select a service" required><option value="">Select a service</option><option>Mobile app development</option><option>Website design</option><option>Logo &amp; branding</option><option>Graphic design</option><option>Multiple services / Not sure yet</option></select>
-      <textarea name="message" placeholder="Tell us a little about your project..." aria-label="Tell us about your project" required></textarea>
-      <button class="btn" type="submit">✉ Send Enquiry</button>
-      <p class="note">This form opens your email app to send the enquiry to GPS Digital Solutions. It does not store your information on this website.</p>
-    </form>
-  </div>
-</div></section>
-</main>
-<footer><div class="wrap footer-row"><a class="brand" href="#home"><span class="logo">GPS</span><span>GPS DIGITAL SOLUTIONS<small>IDEAS · DESIGN · DEVELOP</small></span></a><div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div><span>© <span id="year"></span> GPS Digital Solutions</span></div></footer>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div class="hero-copy">
+
+<div class="eyebrow">
+TURN YOUR IDEAS INTO REALITY
+</div>
+
+<h1>
+Custom Apps, Websites,<br>
+Logos & Designs<br>
+<span class="gradient-text">
+for Your Business<br>
+or Personal Brand
+</span>
+</h1>
+
+<p>
+We create modern, high-quality digital solutions that help you stand out,
+grow and succeed. Whether you need a mobile app, a professional website,
+a unique logo or stunning designs — we've got you covered.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Get a Free Quote →
+</a>
+
+<a href="#portfolio" class="btn btn-outline">
+View Our Work
+</a>
+
+</div>
+
+<div class="hero-features">
+
+<div class="hero-feature">
+<span class="check">✓</span>
+Fast & Reliable
+</div>
+
+<div class="hero-feature">
+<span class="check">✓</span>
+100% Satisfaction
+</div>
+
+<div class="hero-feature">
+<span class="check">✓</span>
+Ongoing Support
+</div>
+
+</div>
+
+</div>
+
+
+<!-- HERO PREVIEW -->
+
+<div class="hero-preview">
+
+<div class="laptop">
+
+<div class="laptop-screen">
+
+<div class="laptop-topbar">
+
+<span class="mini-logo">GPS</span>
+
+<div class="mini-nav">
+<span>Home</span>
+<span>Services</span>
+<span>About</span>
+<span>Contact</span>
+</div>
+
+</div>
+
+<div class="screen-copy">
+
+<h3>
+Your Vision<br>
+Our Design
+</h3>
+
+<p>
+Modern websites. Powerful apps.<br>
+Beautiful designs.
+</p>
+
+<span class="mini-button">
+Get Started
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="phone">
+
+<div class="phone-screen">
+
+<div class="phone-logo">
+GPS
+</div>
+
+<div class="trading-title">
+GPS Trading
+</div>
+
+<div class="chart">
+
+<svg viewBox="0 0 100 70">
+
+<polyline
+points="0,58 8,54 13,60 20,45 27,49 34,31 40,42 46,25 52,35 58,20 63,30 69,15 75,25 81,8 88,20 94,7 100,12"
+fill="none"
+stroke="#00e58b"
+stroke-width="2"
+/>
+
+</svg>
+
+</div>
+
+<div class="phone-btn">
+Get Started
+</div>
+
+<div class="phone-menu">
+<span>Learn</span>
+<span>Signals</span>
+<span>Education</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-eyebrow">
+OUR SERVICES
+</div>
+
+<h2>
+Everything You Need, All in One Place
+</h2>
+
+<div class="blue-line"></div>
+
+<p>
+From concept to launch, we provide complete digital solutions tailored to your needs.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<div class="service-icon icon-blue">
+📱
+</div>
+
+<h3>Mobile Apps</h3>
+
+<p>
+Custom iOS and Android apps built for performance,
+usability and your goals.
+</p>
+
+<a href="#contact" class="learn">
+Learn More →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon icon-green">
+🌐
+</div>
+
+<h3>Websites</h3>
+
+<p>
+Modern, responsive websites that look great and
+work seamlessly on all devices.
+</p>
+
+<a href="#contact" class="learn">
+Learn More →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon icon-purple">
+✎
+</div>
+
+<h3>Logos & Branding</h3>
+
+<p>
+Unique, professional logos and brand identity
+designs that make you memorable.
+</p>
+
+<a href="#contact" class="learn">
+Learn More →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon icon-orange">
+🎨
+</div>
+
+<h3>Graphic Design</h3>
+
+<p>
+Eye-catching designs for social media,
+marketing, print and more.
+</p>
+
+<a href="#contact" class="learn">
+Learn More →
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="portfolio">
+
+<div class="container">
+
+<div class="portfolio-top">
+
+<div class="section-head">
+
+<div class="section-eyebrow">
+OUR WORK
+</div>
+
+<h2>
+Recent Projects
+</h2>
+
+<p>
+Take a look at some of the amazing projects we've created for our clients.
+</p>
+
+</div>
+
+<a href="#contact" class="portfolio-btn">
+View Full Portfolio →
+</a>
+
+</div>
+
+
+<div class="projects">
+
+
+<div class="project">
+
+<div class="project-image">
+<img src="project1.png" alt="GPS Trading App">
+</div>
+
+<h4>GPS Trading App</h4>
+<p>iOS App Development</p>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-image">
+<img src="project2.png" alt="Business Website">
+</div>
+
+<h4>Business Website</h4>
+<p>Website Development</p>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-image">
+<img src="project3.png" alt="GPS Logo Design">
+</div>
+
+<h4>Logo Design</h4>
+<p>Brand Identity</p>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-image">
+<img src="project4.png" alt="Social Media Graphics">
+</div>
+
+<h4>Social Media Graphics</h4>
+<p>Graphic Design</p>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="about">
+
+<div class="container cta-content">
+
+<div>
+
+<div class="section-eyebrow">
+LET'S WORK TOGETHER
+</div>
+
+<h2>
+Ready to Bring Your Idea<br>
+to Life?
+</h2>
+
+<p>
+Get in touch today for a free quote.
+Let's discuss your project and create something amazing together.
+</p>
+
+<div class="cta-points">
+
+<div class="cta-point">
+<span class="cta-check">✓</span>
+Free Quotes
+</div>
+
+<div class="cta-point">
+<span class="cta-check">✓</span>
+No Obligation
+</div>
+
+<div class="cta-point">
+<span class="cta-check">✓</span>
+Quick Response
+</div>
+
+</div>
+
+</div>
+
+
+<div class="quote-form" id="contact">
+
+<h3>
+Get a Free Quote
+</h3>
+
+<form id="quoteForm">
+
+<div class="form-field">
+<input type="text" id="name" placeholder="Your Name" required>
+</div>
+
+<div class="form-field">
+<input type="email" id="email" placeholder="Your Email" required>
+</div>
+
+<div class="form-field">
+
+<select id="service" required>
+
+<option value="">
+Select Service
+</option>
+
+<option>Mobile App</option>
+<option>Website</option>
+<option>Logo & Branding</option>
+<option>Graphic Design</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-field">
+
+<textarea
+id="message"
+placeholder="Tell us about your project..."
+required>
+</textarea>
+
+</div>
+
+<button type="submit" class="send-btn">
+✈ Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+<strong>GPS DIGITAL SOLUTIONS</strong>
+</div>
+
+<div class="footer-nav">
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="footer-copy">
+© <span id="year"></span>
+GPS Digital Solutions. All rights reserved.
+</div>
+
+</div>
+
+</footer>
+
+
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('quoteForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const f = new FormData(this);
-  const subject = encodeURIComponent('Free quote enquiry — GPS Digital Solutions');
-  const body = encodeURIComponent('Name: '+f.get('name')+'\\nEmail: '+f.get('email')+'\\nService: '+f.get('service')+'\\n\\nProject details:\\n'+f.get('message'));
-  window.location.href = 'mailto:gsmit0487@gmail.com?subject='+subject+'&body='+body;
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+document.getElementById("quoteForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById("name").value;
+
+const email =
+document.getElementById("email").value;
+
+const service =
+document.getElementById("service").value;
+
+const message =
+document.getElementById("message").value;
+
+const subject =
+encodeURIComponent(
+"New Quote Request - " + service
+);
+
+const body =
+encodeURIComponent(
+"Name: " + name +
+"\n\nEmail: " + email +
+"\n\nService: " + service +
+"\n\nProject Details:\n" + message
+);
+
+window.location.href =
+"mailto:gsmit0487@gmail.com?subject=" +
+subject +
+"&body=" +
+body;
+
 });
+
 </script>
+
 </body>
 </html>
